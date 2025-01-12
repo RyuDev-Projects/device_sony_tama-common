@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018-2024 The LineageOS Project
+# Copyright (C) 2018-2025 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -173,6 +173,7 @@ PRODUCT_COPY_FILES += \
 # Common init scripts
 PRODUCT_PACKAGES += \
     fstab.qcom \
+    fstab.qcom.ramdisk \
     idd.fstab \
     init.class_main.sh \
     init.msm.usb.configfs.rc \
@@ -182,16 +183,15 @@ PRODUCT_PACKAGES += \
     init.qcom.post_boot.sh \
     init.qcom.power.rc \
     init.qcom.rc \
+    init.qcom.recovery.rc \
     init.qcom.sensors.sh \
     init.qcom.sh \
     init.qcom.usb.rc \
     init.qcom.usb.sh \
-    init.recovery.qcom.rc \
     init.target.rc \
     qns.fstab \
     sensor_json_transfer.sh \
-    ueventd.qcom.rc \
-    ueventd.tama.rc
+    ueventd.qcom.rc
 
 # Configstore
 PRODUCT_PACKAGES += \
